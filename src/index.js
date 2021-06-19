@@ -41,13 +41,11 @@ const App = () => {
           document.getElementById(datos.name).classList.remove("invisible")
           document.getElementById(datos.name).classList.add("container--image-choice")
           document.getElementById(datos.name).classList.remove("container-images")
-          // document.getElementById("title").classList.remove("invisible")
           setBooleano(true)
         } else {
           document.getElementById(datos.name).classList.remove("container--image-choice")
           document.getElementById(datos.name).classList.add("container-images")
           document.getElementById(datos.name).classList.add("invisible")
-          // document.getElementById("title").classList.add("invisible")
         }
       }
     }
