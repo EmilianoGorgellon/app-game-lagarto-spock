@@ -18,10 +18,7 @@ body {
   padding: 0;
   font-family: 'Barlow Semi Condensed', sans-serif;
   width: 100vw;
-  height: 100vh;
-  overflow: hidden;
 }
-
 .container--header {
   display: flex;
   justify-content: space-between;
@@ -96,6 +93,7 @@ body {
   height: 100px;
   top: -15px;
   left: -13px;
+  background-color: red;
   border-radius: 50%;
   z-index: -10;
 }
@@ -181,15 +179,22 @@ body {
 /* Styles rules */
 
 .button-rules {
-  position: absolute;
-  right: 10%;
-  bottom: 20px;
+  position: relative;
+  margin-top: 100px;
+  margin-left: 60%;
+  margin-bottom: 100px;
+  left: 0;
   padding: 8px 35px;
   color: var(--white);
   font-size: 18px;
   background-color: transparent;
   border: 2px solid var(--dark-text);
   border-radius: 6px;
+}
+@media screen and (min-width: 768px) {
+  .button-rules {
+    top: 90%;
+  }
 }
 .container-rules {
   position: relative;
@@ -199,7 +204,7 @@ body {
 }
 .title-rules {
   position: absolute;
-  top: -65vh;
+  top: -102vh;
   margin-right: 0px;
   font-size: 28px;
   color: var(--dark-text);
@@ -207,13 +212,14 @@ body {
 }
 @media screen and (min-width: 768px) {
   .title-rules {
-    top: -75vh;
+    top: -93vh;
     margin-right: 200px;
   }
 }
 .img-close {
   position: absolute;
   top: 400px;
+  background-color: red;
   left: 0;
   right: 0;
   margin-right: auto;
@@ -232,13 +238,14 @@ body {
   padding: 80px 10px;
   left: 0;
   right: 0;
-  margin: -50vh auto 0 auto;
+  top: 0;
+  margin: -100vh auto 0 auto;
   background-color: var(--white);
   border-radius: 8px;
 }
 @media screen and (min-width: 768px) {
   .img-rules {
-    margin-top: -70vh;
+    margin-top: -90vh;
   }
 }
 
@@ -298,6 +305,11 @@ body {
 }
 .title-img-player {
   left: 30px;
+}
+@media screen and (max-width: 440px) {
+  .title-img-player {
+    top: 130px;
+  }
 }
 @media screen and (min-width: 768px) {
   .title-img-player {
