@@ -93,7 +93,6 @@ body {
   height: 100px;
   top: -15px;
   left: -13px;
-  background-color: red;
   border-radius: 50%;
   z-index: -10;
 }
@@ -219,7 +218,6 @@ body {
 .img-close {
   position: absolute;
   top: 400px;
-  background-color: red;
   left: 0;
   right: 0;
   margin-right: auto;
